@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="com.actitime.testscript.ReportModule">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="modifyReport"/>
+          <include name="createReport"/>
+          <include name="deleteReport"/>
+          <include name="login"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.actitime.testscript.ReportModule -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="com.actitime.testscript.TaskModule">
+        <methods>
+          <include name="modifyTask"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="createTask"/>
+          <include name="deleteTask"/>
+          <include name="login"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.actitime.testscript.TaskModule -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
